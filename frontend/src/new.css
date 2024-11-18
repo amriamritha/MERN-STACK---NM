@@ -1,0 +1,257 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #266066;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #266066;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.home-container {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  max-width: 90%;
+  height: auto;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-letter {
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+
+.s-letter {
+  font-size: 2.2em;
+  color: #ffffff;
+}
+
+.t-letter {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+/* Main Layout */
+.main {
+  padding: 15px;
+  min-height: 92vh;
+  display: flex;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  min-height: 88vh;
+  width: 18vw;
+  border-radius: 8px;
+  background-color: rgb(34, 139, 34);
+  box-shadow: 0 0 4px grey;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 10vh;
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px grey;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.body {
+  flex: 1;
+  box-shadow: 0 0 2px grey;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.logo h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2E8B57;
+}
+
+.menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-items {
+  margin-top: 20px;
+}
+
+.menu-items p {
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.menu-items .icons {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: mediumseagreen;
+  transition: color 0.3s ease;
+}
+
+.menu-items .icons:hover {
+  color: limegreen;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.notify {
+  position: relative;
+  cursor: pointer;
+}
+
+.notify .icon {
+  font-size: 1.5rem;
+  color: #2E8B57;
+  transition: color 0.3s ease;
+}
+
+.notify .icon:hover {
+  color: darkolivegreen;
+}
+
+sup {
+  margin-right: 15px;
+  color: #2E8B57;
+}
+
+/* Box and Component Styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px grey;
+  background-color: whitesmoke;
+  max-width: 700px;
+  width: 100%;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px dashed grey;
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.component:hover {
+  background-color: #f0fff0;
+}
+
+.component p {
+  margin: 10px 0;
+  color: grey;
+}
+
+.btn-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn-progress button {
+  color: grey;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-progress button:hover {
+  background-color: #d0ffd0;
+  box-shadow: 0 0 10px grey;
+}
+
+/* Progress Bar Styling */
+progress {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #2E8B57;
+  border-radius: 10px;
+}
